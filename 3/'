@@ -1,0 +1,20 @@
+def get_overlap(games) -> list:
+    game: str = ''
+    overlaps: list = []
+    overlap: set
+    for game in games:
+        mid = int(len(game) / 2)
+        part1 = game[:mid]
+        part2 = game[mid:]
+        overlap = set(part1) & set(part2)
+        overlaps.append(overlap)
+    return overlaps
+
+
+def main(data):
+    games = data.splitlines()
+    half_match(games)
+
+
+if __name__ == "__main__":
+    main('**kwargs')
