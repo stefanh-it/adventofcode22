@@ -85,7 +85,6 @@ def create_columns(rows):
 
 def main(data):
     """Main Entry."""
-    total_sum = 0
     rows = data.splitlines()
     columns = create_columns(rows)
     score = get_visible(rows, columns)
