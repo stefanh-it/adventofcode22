@@ -28,5 +28,3 @@ if sys.argv[1] == '2' and sys.argv[2] == 'input':
         input_data = f.read()
         solution = p2.main(input_data)
         print(f" Part1 Solution: {solution}")
-
-import os, psutil; print(psutil.Process(os.getpid()).memory_info().rss / 1024 ** 2)
